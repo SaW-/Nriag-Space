@@ -15,7 +15,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<!-- modernizr -->
-	<script src="js/modernizr.js"></script>
+	<script src="{{asset('js/modernizr.js')}}"></script>
 	<!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
@@ -89,7 +89,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 no-padding">
 					<div class="col-md-12 text-center user">
-						<img src="img/user.jpg" alt="Me" class="img-circle">
+						<img src="{{asset('img/user.jpg')}}" alt="Me" class="img-circle">
 						<h1>John Doe</h1>
 						<h4>Web UI Designer &amp; Developer living in Dhaka</h4>
 						<div class="social-icons">
@@ -188,9 +188,9 @@
 					</div>
 					<div class="col-md-6 footer-menu text-right">
 						<ul class="list-inline">
-							<li><a href="index.html">home</a></li>
-							<li><a href="about.html">about</a></li>
-							<li><a href="works.html">my works</a></li>
+							<li><a href="{{ URL::to('/') }}">Home</a></li>
+							<li><a href="{{ URL::to('aboutus') }}">About Us</a></li>
+							<li><a href="{{ URL::to('browse') }}">Browse</a></li>
 						</ul>
 					</div>
 				</div>

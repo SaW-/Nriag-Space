@@ -35,4 +35,9 @@ class HomeController extends Controller
     {
         return view('browse');
     }
+
+    public function getbrowse($id)
+    {
+        return view('show');
+    }
 }

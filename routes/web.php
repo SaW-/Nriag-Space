@@ -20,6 +20,7 @@ Auth::routes();
 Route::get('/', 'HomeController@index');
 Route::get('/aboutus', 'HomeController@aboutus');
 Route::get('/browse', 'HomeController@browse');
+Route::get('/browse/{id}', 'HomeController@getbrowse');
 
 Route::get('admin', 'Admin\AdminController@index');
 Route::get('admin/give-role-permissions', 'Admin\AdminController@getGiveRolePermissions');
