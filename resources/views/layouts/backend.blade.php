@@ -8,7 +8,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>1D, 2D, 3D– Go!</title>
+        <title>NRIAG Space</title>
 
         <!-- Styles -->
         <link href="{{asset('css/app.css')}}" rel="stylesheet">
@@ -36,7 +36,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        1D, 2D, 3D– Go!
+                        NRIAG Space
                     </a>
                 </div>
 
@@ -92,7 +92,7 @@
         <hr/>
 
         <div class="container">
-            &copy; {{ date('Y') }}. Created by 1D, 2D, 3D– Go!
+            &copy; {{ date('Y') }}. Created by NRIAG Space!
             <br/>
         </div>
 
