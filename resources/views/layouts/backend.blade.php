@@ -92,7 +92,7 @@
         <hr/>
 
         <div class="container">
-            &copy; {{ date('Y') }}. Created by <a href="http://www.appzcoder.com">1D, 2D, 3D– Go!</a>
+            &copy; {{ date('Y') }}. Created by 1D, 2D, 3D– Go!
             <br/>
         </div>
 
