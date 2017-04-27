@@ -23,7 +23,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 <!--{{ config('app.name', 'Laravel') }}-->
-    <title>Nriag Space</title>
+    <title>NRIAG Space</title>
 
 
     <!-- Scripts -->
@@ -42,8 +42,8 @@
 				<div class="col-md-8 col-md-offset-2 no-padding">
 					<div class="col-md-12 text-center user">
 						<img src="{{asset('img/user.png')}}" alt="Me" class="img-circle">
-						<h1>Nriag Space</h1>
-						<h4>Welcome to Nriag Space</h4>
+						<h1>NRIAG Space</h1>
+						<h4>Welcome to NRIAG Space</h4>
 						<!--<div class="social-icons">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
@@ -136,7 +136,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<p>&copy; {{ date('Y') }}. Created by Nriag Space</p>
+						<p>&copy; {{ date('Y') }}. Created by NRIAG Space</p>
 					</div>
 					<div class="col-md-6 footer-menu text-right">
 						<ul class="list-inline">
