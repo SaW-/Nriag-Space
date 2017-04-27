@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+
 use App\Http\Controllers\Controller;
 use App\Permission;
 use App\Role;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Session;
 
@@ -17,6 +19,9 @@ class AdminController extends Controller
      */
     public function index()
     {
+        if (Auth::guest()){
+            return redirect('/login');
+        }
         return view('admin.dashboard');
     }
 
