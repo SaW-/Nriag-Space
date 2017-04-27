@@ -41,7 +41,10 @@ class SattalitesController extends Controller
      */
     public function create()
     {
-        return view('admin.sattalites.create');
+        $cateogriesName = \App\Categories::pluck('title', 'id');
+		
+
+        return view('admin.sattalites.create', compact('cateogriesName'));
     }
 
     /**
@@ -54,13 +57,18 @@ class SattalitesController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-			'title' => 'required',
-			'data_file' => 'required'
-		]);
+                'title' => 'required',
+                'data_file' => 'required'
+        ]);
         
         $requestData = $request->all();
-       
-        Sattalite::create($requestData);
+        $imageName =  time().".".$request->file('image')->getClientOriginalExtension();
+        
+        $request->file('image')->move(public_path('images/sattalites/'), $imageName);
+        
+        $s = Sattalite::create($requestData);
+        $s->image = $imageName;
+        $s->save();
         
         Session::flash('flash_message', 'Sattalite added!');
 

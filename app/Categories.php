@@ -4,14 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Sattalite extends Model
+class Categories extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'sattalites';
+    protected $table = 'categories';
 
     /**
     * The database primary key value.
@@ -25,11 +25,7 @@ class Sattalite extends Model
      *
      * @var array
      */
-    protected $fillable = ['title', 'description', 'data_file', 'category_id', 'image', 'coverage_area', 'tle'];
-    
-    public function categoryType() {
-        return $this->HasOne('App\Categories','id', 'category_id');
-    }
+    protected $fillable = ['title'];
 
     
 }
