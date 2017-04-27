@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>Developer | Free Personal Bootstrap HTML Template</title>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 	<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
@@ -23,8 +22,8 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
+<!--{{ config('app.name', 'Laravel') }}-->
+    <title>Nriag Space</title>
 
 
     <!-- Scripts -->
@@ -35,74 +34,27 @@
     </script>
 </head>
 <body>
-    	<div class="top-bar">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="col-md-4">
-						<h3>Recent posts</h3>
-						<nav>
-							<ul class="recent-posts">
-								<li><a href="#">10 TIPS FOR MORE COLOUR IN YOUR PHOTOGRAPHY</a></li>
-								<li><a href="#">How to design users oriented</a></li>
-								<li><a href="#">Smart coding makes all easy</a></li>
-								<li><a href="#">KEEP CALM AND PLAY NICE WHENEVER POSSIBLE</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="col-md-4">
-						<h3>Text Widget here</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis minus provident illum quia ut debitis deserunt nemo, officiis earum similique dolorem, nesciunt ipsa vel at blanditiis iure! Tempore facilis, sapiente.</p>
-					</div>
-					<div class="col-md-4">
-						<h3>Tag clouds</h3>
-						<nav>
-							<ul class="tags list-inline">
-								<li><a href="#">WordPress</a></li>
-								<li><a href="#">HTML</a></li>
-								<li><a href="#">Bootstrap</a></li>
-								<li><a href="#">WordPress</a></li>
-								<li><a href="#">HTML</a></li>
-								<li><a href="#">Bootstrap</a></li>
-								<li><a href="#">WordPress</a></li>
-								<li><a href="#">HTML</a></li>
-								<li><a href="#">Bootstrap</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<div class="banner" id="home"></div>
 	<header class="header">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="top-nav"></div>
-				<div class="top-click">
-					<a href="#"><i class="fa fa-plus"></i></a>
-					<a href="#"><i class="fa fa-minus"></i></a>
-				</div>
-			</div>
-		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 no-padding">
 					<div class="col-md-12 text-center user">
-						<img src="{{asset('img/user.jpg')}}" alt="Me" class="img-circle">
-						<h1>John Doe</h1>
-						<h4>Web UI Designer &amp; Developer living in Dhaka</h4>
-						<div class="social-icons">
+						<img src="{{asset('img/user.png')}}" alt="Me" class="img-circle">
+						<h1>Nriag Space</h1>
+						<h4>Welcome to Nriag Space</h4>
+						<!--<div class="social-icons">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
 							<a href="#"><i class="fa fa-instagram"></i></a>
 							<a href="#"><i class="fa fa-linkedin"></i></a>
 							<a href="#"><i class="fa fa-google-plus"></i></a>
-						</div>
+						</div>-->
 					</div>
 					<!-- nav starts here -->
 					<div class="col-md-12">	
-						<div class="main-nav">
+						<div class="main-nav" style=" margin-top: 111px; ">
 							<nav class="navbar navbar-default">
 							  <div class="container-fluid">
 							    <!-- Brand and toggle get grouped for better mobile display -->
@@ -136,7 +88,7 @@
     @yield('content')
  
 	<footer class="footer">
-		<div class="container">
+		<!--<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="col-md-4">
@@ -167,7 +119,7 @@
 					<div class="col-md-4 instagram-photos">
 						<h3>Follow @ Instagram</h3>
 						<!-- place your instagram widget below -->
-						<a href="#"><img src="http://placehold.it/100x100" alt=""></a>
+						<!--<a href="#"><img src="http://placehold.it/100x100" alt=""></a>
 						<a href="#"><img src="http://placehold.it/100x100" alt=""></a>
 						<a href="#"><img src="http://placehold.it/100x100" alt=""></a>
 						<a href="#"><img src="http://placehold.it/100x100" alt=""></a>
@@ -179,12 +131,12 @@
 		</div>
 		<div class="text-right">
 			<a href="#home"><i class="fa fa-arrow-up"></i></a>
-		</div>
+		</div>-->
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<p>&copy; 2015 — Designed by <a href="https://www.behance.net/khalilkode">Md. Khalil Uddin</a> &amp; Developed by <a href="http://mostafiz.me">Mostafizur Rahman</a></p>
+						<p>&copy; {{ date('Y') }}. Created by Nriag Space</p>
 					</div>
 					<div class="col-md-6 footer-menu text-right">
 						<ul class="list-inline">
