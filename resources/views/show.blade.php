@@ -5,9 +5,14 @@
 <style>
       @import url({{asset('Build/Cesium/Widgets/widgets.css')}});
  
-section {
-    width:1200px;
-    padding:10px;	 	 
+#cesiumContainer {
+    width:1200px;	 
+}
+.cesium-viewer-bottom{
+    display:none;
+}
+.sec{
+    padding: 20px;
 }
 footer {
     background-color:black;
@@ -96,14 +101,32 @@ function activateButtons() {
 </script>
 
 <center>
-<section onload="initializeButtons()">
-<h2 id="announcement"></h2>
+    <section class="container-fluid sec" onload="initializeButtons()">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <h2 id="announcement">{{$sattalite->title}}</h2>
+            </div>
+            
+            
+            <!--<input type="button" id="bigPicture" value="Big Picture" onclick="bigPicture();" /><br>-->
+            <input type="button" id="showShip" value="Spacecraft" onclick="showSpaceCraft();" />
+            <!--<input type="button" id="showMoon" value="Moon" onclick="showTheMoon();" /><br>-->
+            <input type="button" id="showEarth" value="Earth" onclick="showTheEarth();" /><br>
+            <br>
+            <img src="{{asset( '/images/sattalites/'.$sattalite->image)}}" style="width:200px;float:right;" alt="{{ URL::to('browse/'.$sattalite->id) }}">
+            <div><strong><h2 style="text-align: left;">Description: </h2></strong></div><br/>
+            <div style="text-align: left;">{{$sattalite->description}}</div>
+            <br/><br/>
+            <div><strong><h2 style="text-align: left;">TLE: </h2></strong></div><br/>
 
-<!--<input type="button" id="bigPicture" value="Big Picture" onclick="bigPicture();" /><br>-->
-<input type="button" id="showShip" value="Spacecraft" onclick="showSpaceCraft();" /><br>
-<!--<input type="button" id="showMoon" value="Moon" onclick="showTheMoon();" /><br>-->
-<input type="button" id="showEarth" value="Earth" onclick="showTheEarth();" /><br>
-  <div id="cesiumContainer"></div>
+            <div style="text-align: left;">{{$sattalite->tle}}</div>
+        </div>
+        <div class="col-md-8">
+            <div id="cesiumContainer"></div>
+        </div>
+    </div>
+  
   <script>
    var viewer = new Cesium.Viewer('cesiumContainer', {
        infoBox : false,
@@ -118,7 +141,11 @@ function activateButtons() {
     var clock = viewer.clock;
 
    var czmlDataSource1 = new Cesium.CzmlDataSource();
-       czmlDataSource1.load('../Apps/saw.czml');
+   
+    var data = {!! json_encode($sattalite->data_file) !!};
+
+
+       czmlDataSource1.load(JSON.parse(data));
        viewer.dataSources.add(czmlDataSource1); 
 	   
    var czmlDataSource2 = new Cesium.CzmlDataSource();
@@ -138,7 +165,7 @@ function activateButtons() {
         camera.lookAtTransform(transform, offset);
     }
 };
-	clock.multiplier =  2100 ; // 60 * 60 * 60;          // speed of the simulation
+	clock.multiplier =  100 ; // 60 * 60 * 60;          // speed of the simulation
     scene.preRender.addEventListener(icrf);  // enable Earth rotation
 	var icrfSwitch = true ;                  // flag for icrf event listener
 	

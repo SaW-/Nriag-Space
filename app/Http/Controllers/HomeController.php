@@ -42,6 +42,7 @@ class HomeController extends Controller
 
     public function getbrowse($id)
     {
-        return view('show');
+        $sattalite = Sattalite::where('id',$id)->first();
+        return view('show',compact('sattalite'));
     }
 }
