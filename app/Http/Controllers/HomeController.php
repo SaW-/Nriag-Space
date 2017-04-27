@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Sattalite;
-
+use App\Categories;
 class HomeController extends Controller
 {
     /**
@@ -36,8 +36,8 @@ class HomeController extends Controller
     public function browse()
     {   
         $sattalite = Sattalite::all();
-        
-        return view('browse',compact('sattalite'));
+        $categories = Categories::all();
+        return view('browse',compact('sattalite', 'categories'));
     }
 
     public function getbrowse($id)
