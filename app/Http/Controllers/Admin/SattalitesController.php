@@ -59,10 +59,7 @@ class SattalitesController extends Controller
 		]);
         
         $requestData = $request->all();
-        if ($request->hasFile('data_file')) {
-             $request->file('image')->move( base_path() . '/public/images/catalog/', $imageName );
-        }
-        
+       
         Sattalite::create($requestData);
         
         Session::flash('flash_message', 'Sattalite added!');

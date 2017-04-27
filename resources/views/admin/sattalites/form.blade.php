@@ -15,7 +15,7 @@
 <div class="form-group {{ $errors->has('data_file') ? 'has-error' : ''}}">
     {!! Form::label('data_file', 'Data File', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-6">
-        {!! Form::file('data_file', ['class' => 'form-control', 'required' => 'required']) !!}
+        {!! Form::textarea('data_file', null, ['class' => 'form-control', 'required' => 'required']) !!}
         {!! $errors->first('data_file', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
