@@ -8,13 +8,13 @@
 					<div class="col-md-12">
 						<article class="single-post">
 							<div class="post-header text-center">
-								<h2><a href="#">Welcome to my personal website</a></h2>
-								<span>Written by <a href="#">John Doe</a> in <a href="#">Design</a> on October 12, 2015 </span>
+								<h2><a href="#">Welcome to Nriag Space</a></h2>
+								<br/>
+								<!--<span>Written by <a href="#">John Doe</a> in <a href="#">Design</a> on October 12, 2015 </span>-->
 							</div>
 							<div class="post-content">
 								<a href="#"><img src="img/blog-1.jpg" alt="" class="img-responsive"></a>
-								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor dunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justoduo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dol sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
-								<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no takimata sanctus est Loripsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed dit luptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+								<p>Design an interactive 3D web application to help the general public, especially teachers and students to understand and visualize data of earth science using earth science mission. This application displays satellite trajectory, instrumentation, visibility-based coverage, Doppler Based Multiple Access-based coverage and data visualization. The application predicts the trajectory of satellite using Simplified General perturbations (SGP4) model for orbital propagation and NORAD two-line element set format (TLE).</p>
 							</div>
 						</article>
 					</div>
