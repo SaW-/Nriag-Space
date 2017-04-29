@@ -43,7 +43,7 @@
 <div class="form-group {{ $errors->has('tle') ? 'has-error' : ''}}">
     {!! Form::label('tle', 'TLE', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-6">
-        {!! Form::textarea('tle', null, ['class' => 'form-control']) !!}
+        {!! Form::textarea('tle', null, ['class' => 'form-control', 'required' => 'required']) !!}
         {!! $errors->first('tle', '<p class="help-block">:message</p>') !!}
     </div>
 </div>

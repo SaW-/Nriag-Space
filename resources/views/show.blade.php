@@ -115,10 +115,10 @@ function activateButtons() {
             <input type="button" id="showEarth" value="Earth" onclick="showTheEarth();" /><br>
             <br>
             <img src="{{asset( '/images/sattalites/'.$sattalite->image)}}" style="width:200px;float:right;" alt="{{ URL::to('browse/'.$sattalite->id) }}">
-            <div><strong><h2 style="text-align: left;">Description: </h2></strong></div><br/>
-            <div style="text-align: left;">{{$sattalite->description}}</div>
-            <br/><br/>
-            <div><strong><h2 style="text-align: left;">TLE: </h2></strong></div><br/>
+            <div><strong><h3 style="text-align: left;">Description: </h3></strong></div>
+            <div style="text-align: left;">{!! $sattalite->description !!}</div>
+            <br/>
+            <span><strong class="pull-left">Two Line Element Set (TLE): </strong></span><br/>
 
             <div style="text-align: left;">{{$sattalite->tle}}</div>
         </div>
