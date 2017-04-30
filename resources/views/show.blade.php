@@ -124,7 +124,7 @@ function activateButtons() {
             
             <span><strong class="pull-left">Two Line Element Set (TLE): </strong></span><br/>
 
-            <div style="text-align: left;">{{$sattalite->tle}}</div>
+            <div style="text-align: left;">{!! $sattalite->tle !!}</div>
         </div>
         <div class="col-md-7">
             <div id="cesiumContainer"></div>

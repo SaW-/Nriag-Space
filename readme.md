@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<a href="https://www.mathworks.com/matlabcentral/profile/authors/8128735-meysam-mahooti?requestedDomain=www.mathworks.com"><img src="http://epidemiology.mit.edu/index_files/matlab_logo.jpg" style="width:50%" alt="Build Status"></a>
+<a href="https://www.mathworks.com/matlabcentral/profile/authors/8128735-meysam-mahooti?requestedDomain=www.mathworks.com"><img src="http://epidemiology.mit.edu/index_files/matlab_logo.jpg" style="width:10%" alt="Build Status"></a>
 MATLAB is a high-performance language for technical computing. It integrates computation, visualization, and programming in an easy-to-use environment where problems and solutions are expressed in familiar mathematical notation
 </p>
 
