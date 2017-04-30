@@ -40,7 +40,7 @@
                                         <td>{{ $item->title }}</td><td>{{ $item->description }}</td><td>{{ $item->data_file }}</td>
                                         <td>
                                             <a href="{{ url('/App/sattalites/' . $item->id) }}" title="View Sattalite"><button class="btn btn-info btn-xs"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
-                                            <a href="{{ url('/App/sattalites/' . $item->id . '/edit') }}" title="Edit Sattalite"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+<!--                                            <a href="{{ url('/App/sattalites/' . $item->id . '/edit') }}" title="Edit Sattalite"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>-->
                                             {!! Form::open([
                                                 'method'=>'DELETE',
                                                 'url' => ['/App/sattalites', $item->id],

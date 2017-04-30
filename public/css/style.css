@@ -453,7 +453,7 @@ ul.navbar li a:hover, ul.navbar li a.active, .navbar-default .navbar-nav>li>a:ho
 }
 .single-work img{
 	width: 100%;
-	height: 100%;
+	height: 250px;
 }
 .single-work{
 	position: relative;

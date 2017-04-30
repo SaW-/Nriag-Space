@@ -6,7 +6,7 @@
       @import url({{asset('Build/Cesium/Widgets/widgets.css')}});
  
 #cesiumContainer {
-    width:1200px;	 
+    width:1000px;	 
 }
 .cesium-viewer-bottom{
     display:none;
@@ -103,7 +103,7 @@ function activateButtons() {
 <center>
     <section class="container-fluid sec" onload="initializeButtons()">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
             <div class="row">
                 <h2 id="announcement">{{$sattalite->title}}</h2>
             </div>
@@ -115,14 +115,18 @@ function activateButtons() {
             <input type="button" id="showEarth" value="Earth" onclick="showTheEarth();" /><br>
             <br>
             <img src="{{asset( '/images/sattalites/'.$sattalite->image)}}" style="width:200px;float:right;" alt="{{ URL::to('browse/'.$sattalite->id) }}">
-            <div><strong><h2 style="text-align: left;">Description: </h2></strong></div><br/>
-            <div style="text-align: left;">{{$sattalite->description}}</div>
-            <br/><br/>
-            <div><strong><h2 style="text-align: left;">TLE: </h2></strong></div><br/>
+            <div><strong><h3 style="text-align: left;">Description: </h3></strong></div>
+            <div style="text-align: left;">{!! $sattalite->description !!}</div>
+            <br>
+            
+            
+     
+            
+            <span><strong class="pull-left">Two Line Element Set (TLE): </strong></span><br/>
 
             <div style="text-align: left;">{{$sattalite->tle}}</div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-7">
             <div id="cesiumContainer"></div>
         </div>
     </div>
@@ -133,9 +137,9 @@ function activateButtons() {
        selectionIndicator : false,
        baseLayerPicker : false,
         //Use OpenStreetMaps
-        imageryProvider : Cesium.createOpenStreetMapImageryProvider({
-            url : 'https://a.tile.openstreetmap.org/'
-        })
+        imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
+            url : 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
+         })
 	});
 	var scene = viewer.scene;
     var clock = viewer.clock;
