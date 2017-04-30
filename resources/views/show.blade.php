@@ -130,7 +130,7 @@ function activateButtons() {
             <div id="cesiumContainer"></div>
         </div>
     </div>
-  
+        {!! $sattalite->visual_data !!}
   <script>
    var viewer = new Cesium.Viewer('cesiumContainer', {
        infoBox : false,
