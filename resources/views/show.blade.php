@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app1')
 
 @section('content')
 <script src="{{asset('Build/Cesium/Cesium.js')}}"></script>

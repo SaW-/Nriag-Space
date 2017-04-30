@@ -77,6 +77,16 @@ h1{
 	position: relative;
 	z-index: 111;
 }
+.bannerCustom{
+	background: url(../images/4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+	z-index: 111;
+}
 .header{
 	background: rgba(0, 0, 0, 0.52);
 	position: absolute;
