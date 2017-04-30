@@ -17,6 +17,6 @@ MATLAB is a high-performance language for technical computing. It integrates com
 - Type "composer install" to install dependency.
 - Import "space_mission.sql" file into MySQL.
 - Go to http://localhost using browser. 
-- you can find Matlap source code in "Matlab Package" folder
+- Find Matlap source code in "Matlab Package" folder
 
 
